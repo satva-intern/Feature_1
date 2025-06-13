@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+venv/
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Flask Cache and Logs
+instance/
+*.log
+
+# Editor and IDE Files
+.vscode/
+.idea/
+
+# Output files
+generated_chart.html
+llm_generated.py
+
+# Data files
+sample.csv
+
+# Compiled/Jupyter
+*.ipynb_checkpoints/
+*.sqlite3
+*.db
+
+# Dependency Lock files (optional)
+Pipfile.lock
+poetry.lock
