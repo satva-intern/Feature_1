@@ -1,7 +1,10 @@
 import os
 import requests
+from dotenv import load_dotenv
+load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+GROQ_API_KEY = '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'
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 def ask_llm(prompt):
@@ -11,7 +14,7 @@ def ask_llm(prompt):
     }
 
     payload = {
-        "model": "mixtral-8x7b-32768",  # or "llama3-8b-8192"
+        "model": "qwen/qwen3-32b",  # or "llama3-8b-8192"
         "messages": [
             {"role": "system", "content": "You are a data analyst who writes Python code using Plotly."},
             {"role": "user", "content": prompt}
